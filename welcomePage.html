@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome Page</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset utf="8">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!--font-awsome-css-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--bootstrap-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--custom css-->
+<link rel="stylesheet" href="css/style.css">
+
+<!--component-css-->
+
+<link
+	href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container mycont">
+		<div class="tab-content">
+			<div id="menu1" class="tab-pane fade">
+				<h3>Menu 1</h3>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="image-block col-xs-6"
+							style="background: url(images/habit.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images/medicines.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-12"
+							style="background: url(images/diet.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images/meditate.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images/sleep.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-4"
+							style="background: url(images/workout.jpg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-8"
+							style="background: url(images/water.jpeg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-8"
+							style="background: url(images/diet1.jpeg) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-4"
+							style="background: url(images/add.png) no-repeat center top; background-size: cover;">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="menu3" class="tab-pane fade">
+				<h3>Intervals</h3>
+				<div class="list-group">
+
+					<div class="list-group-item">
+						Deleted <span class="badge">5</span>
+					</div>
+					<div class="list-group-item">
+						Warnings <span class="badge">3</span>
+					</div>
+					<div class="panel panel-default">
+						<div class="list-group-item" data-toggle="collapse"
+							data-parent="#accordion" href="#collapse1">
+							<label>Rest</label> <span class="badge">12</span>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in">
+							<div id="slider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<table id="bottomMenu" class="table table-bordered navbar-fixed-bottom" style="text-align:center;">
+			<tr >
+				<th style="text-align:center"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></a><br><a data-toggle="tab" href="#home">Habit Progress</a></th>
+				<th style="text-align:center"><a data-toggle="tab" href="#menu2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a><br><a data-toggle="tab" href="#menu2">Add Habits</a></th>
+				<th style="text-align:center"><a data-toggle="tab" href="#menu3"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a><br><a data-toggle="tab" href="#menu3">My Profile</a></th>
+			</tr>
+		</table>
+	<!-- <li class="button-margin"><a data-toggle="tab" href="#home">Status</a></li>
+		<li class="button-margin"><a data-toggle="tab" href="#menu1">WorkOut</a></li>
+		<li class="button-margin"><a data-toggle="tab" href="#menu2">Habits</a></li>
+		<li class="button-margin"><a data-toggle="tab" href="#menu3">Intervals</a></li> -->	
+
+
+</body>
+</html>

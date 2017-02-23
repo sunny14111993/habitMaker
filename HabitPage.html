@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Habits Page</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset utf="8">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/addHabit.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container mycont">
+		<div class="tab-content">
+				<div id="allHabits" class="container-fluid">
+					<div class="row">
+						<div class="image-block col-xs-6"
+							style="background: url(images1/yoga-posture.png) no-repeat center top; background-size: contain; max-width:100%;max-height:100%; margin-bottom:3%; margin-top:2%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/medical-pills-couple.png) no-repeat center top; background-size: contain; margin-bottom:3%; margin-top:2%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/diet.png) no-repeat center top; background-size: contain; margin-bottom:3%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/sunrise.png) no-repeat center top; background-size: contain; margin-bottom:3%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/rest.png) no-repeat center top; background-size: contain; margin-bottom:3%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/run.png) no-repeat center top; background-size: contain; margin-bottom:3%;">
+							<p></p>
+						</div>
+						<div class="image-block col-xs-6"
+							style="background: url(images1/bike.png) no-repeat center top; background-size: contain;">
+							<p></p>
+						</div>
+						<div id="addNewHabitButton" class="image-block col-xs-6"
+							style="background: url(images/add.png) no-repeat center top; background-size: contain;">
+							<p></p>
+						</div>
+				</div>
+			</div>
+				<div id="addNewHabit">
+				<div class="panel panel-primary">
+					<div class="panel-heading" style="text-align:center;"><b>New Habit</b></div>
+					<div class="panel-body" style="padding: 0px !important;">
+						<table class="table table-user-information" >
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">Habit Name </span>
+										<input type="text" class="form-control">
+									</div>	
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">Habit Image </span>
+										<label class="btn btn-primary btn-file" style="width:100%;">Browse <input type="file" style="display: none;"></label>
+									</div>	
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">&nbsp; &nbsp; Category &nbsp; </span>
+										<select class="form-control">
+											<option>Male</option>
+											<option>Female</option>
+										</select>
+									</div>	
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">Set Days</span>
+										<div class="row seven-cols" style="padding-left: 10px;">
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">S</label>
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">M</label>
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">T</label>
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">W</label>
+											<br><label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">T</label>
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">F</label>
+											<label class="btn btn-primary btn-circle" style="margin-left:5%; margin-top:2%; text-align:center;width:30px; height:30px;padding: 3px 0;border-radius: 15px;">S</label>
+										</div>
+									</div>	
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">Set Alarm</span>
+										<div id="timePicker">
+										<input type="number" class="form-control" style="width:28%;" min="1" max="12"><label class="form-control" style="width:2%;">:</label><input type="number" class="form-control" style="width:28%;" min="0" max="59">
+										<select class="form-control" style="width:32%;">
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+									</div>
+									</div>
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group">
+										<span class="input-group-addon">Comments </span>
+										<input type="textarea" class="form-control">
+									</div>	
+								</td>
+							</tr>
+							
+							<tr class="input-group-sm">
+								<td>
+									<div class="input-group" style="margin-left:40%;">
+									<label class="btn btn-primary">Add Habit</label>
+									</div>	
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				</div>
+				</div>
+		</div>
+
+		<table id="bottomMenu" class="table table-bordered" style="text-align:center;position:fixed;">
+			<tr>
+				<th style="text-align:center"><a href="statusPage.html"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></a><br><a href="statusPage.html">Habit Progress</a></th>
+				<th style="text-align:center"><a href="HabitPage.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a><br><a href="HabitPage.html">Add Habits</a></th>
+				<th style="text-align:center"><a href="profilePage.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a><br><a href="profilePage.html">My Profile</a></th>
+			</tr>
+		</table>
+
+</body>
+</html>
